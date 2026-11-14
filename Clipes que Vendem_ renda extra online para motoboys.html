@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clipes que Vendem: renda extra online para motoboys</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#060A06;--card:#0F170F;--card2:#142014;--line:#1F3320;--neon:#39FF14;--neon-d:#22B80D;--txt:#EAF3EA;--mut:#98AC98;--amber:#FFC247;color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#060A06;--card:#0F170F;--txt:#EAF3EA}}
+:root[data-theme="dark"]{--bg:#060A06;--card:#0F170F;--txt:#EAF3EA}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{background:var(--bg);color:var(--txt);font-family:Barlow,system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:800;line-height:1.02;letter-spacing:.2px}
+h1{font-size:clamp(44px,11vw,76px)}
+h2{font-size:clamp(34px,8vw,52px);margin-bottom:14px}
+h3{font-size:24px;margin-bottom:6px}
+.n{color:var(--neon)}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+p{margin-bottom:14px;color:#C9D8C9}
+.lead{font-size:19px;color:var(--txt)}
+/* barra fixa */
+.bar{position:sticky;top:0;z-index:20;background:rgba(6,10,6,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:10px 0}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.bar b{font-family:"Barlow Condensed",sans-serif;font-size:22px}
+.btn{display:inline-block;background:var(--neon);color:#031003;font-weight:600;font-size:18px;text-decoration:none;padding:16px 26px;border-radius:12px;box-shadow:0 0 0 0 rgba(57,255,20,.5);text-align:center}
+.btn:focus-visible,summary:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.btn.s{padding:10px 16px;font-size:16px}
+.btn.big{display:block;font-size:20px;padding:20px 22px}
+@media (prefers-reduced-motion:no-preference){.btn.big{animation:pulse 2.4s infinite}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(57,255,20,.55)}70%{box-shadow:0 0 0 16px rgba(57,255,20,0)}100%{box-shadow:0 0 0 0 rgba(57,255,20,0)}}
+/* hero: faixas de pista */
+.hero{position:relative;overflow:hidden;padding:48px 0 56px;border-top:0}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 46px,rgba(57,255,20,.07) 46px 52px);mask-image:linear-gradient(#000 40%,transparent);-webkit-mask-image:linear-gradient(#000 40%,transparent)}
+.hero .wrap{position:relative}
+.tag{display:inline-block;border:1px solid var(--neon-d);color:var(--neon);border-radius:99px;padding:5px 14px;font-size:14px;font-weight:600;margin-bottom:18px}
+.hero p.lead{margin:18px 0 22px}
+.ticks{list-style:none;padding:0;margin:0 0 26px}
+.ticks li{padding:6px 0 6px 30px;position:relative;color:var(--txt)}
+.ticks li::before{content:"";position:absolute;left:0;top:11px;width:18px;height:18px;border-radius:50%;background:var(--neon)}
+.ticks li::after{content:"";position:absolute;left:6px;top:15px;width:5px;height:9px;border:solid #031003;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.fine{font-size:14px;color:var(--mut);margin-top:12px;text-align:center}
+.cards{display:grid;gap:12px;margin-top:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 8px}
+.card.hl{border-color:var(--neon-d);background:var(--card2)}
+.pain li{margin-bottom:10px;list-style:none;padding-left:26px;position:relative;color:var(--txt)}
+.pain li::before{content:"\00d7";position:absolute;left:0;top:-2px;color:#FF5A5F;font-size:26px;font-weight:700}
+.days{counter-reset:d;list-style:none;padding:0}
+.days li{counter-increment:d;position:relative;padding:14px 0 14px 58px;border-bottom:1px solid var(--line)}
+.days li::before{content:counter(d);position:absolute;left:0;top:12px;width:42px;height:42px;border-radius:50%;background:var(--neon);color:#031003;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:26px;display:grid;place-items:center}
+.days b{display:block;color:var(--txt)}
+.days span{color:var(--mut);font-size:16px}
+.two{display:grid;gap:12px}
+@media(min-width:620px){.two,.cards.c2{grid-template-columns:1fr 1fr}}
+.yes li,.no li{list-style:none;padding:5px 0 5px 24px;position:relative;font-size:16px;color:#C9D8C9}
+.yes li::before{content:"+";position:absolute;left:0;color:var(--neon);font-weight:700}
+.no li::before{content:"\2212";position:absolute;left:0;color:var(--amber);font-weight:700}
+/* oferta */
+.offer{background:linear-gradient(180deg,var(--card2),var(--card));border:2px solid var(--neon);border-radius:20px;padding:26px 20px;text-align:center;box-shadow:0 0 40px rgba(57,255,20,.15)}
+.price{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:84px;line-height:1;color:var(--neon)}
+.price small{font-size:28px;color:var(--txt)}
+.offer ul{list-style:none;padding:0;text-align:left;margin:20px 0}
+.offer li{padding:8px 0 8px 28px;border-bottom:1px solid var(--line);position:relative;color:var(--txt);font-size:16px}
+.offer li::before{content:"\2713";position:absolute;left:0;color:var(--neon);font-weight:700}
+.timer{display:none;margin:0 0 16px;color:var(--amber);font-weight:600}
+.timer.on{display:block}
+.seal{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--neon-d);border-radius:16px;padding:20px}
+.seal .d{flex:none;width:84px;height:84px;border-radius:50%;border:3px solid var(--neon);display:grid;place-items:center;text-align:center;font-family:"Barlow Condensed",sans-serif;font-weight:800;line-height:.95;color:var(--neon);font-size:32px}
+.seal .d small{display:block;font-size:15px;color:var(--txt)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:0 16px}
+summary{cursor:pointer;padding:16px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::after{content:"+";color:var(--neon);font-size:24px;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{font-size:16px}
+footer{padding:36px 0 120px;font-size:13px;color:var(--mut);border-top:1px solid var(--line)}
+footer p{color:var(--mut);font-size:13px}
+.mob{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(6,10,6,.96);border-top:1px solid var(--neon-d)}
+@media(min-width:760px){.mob{display:none}footer{padding-bottom:36px}}
+
+.cd{display:flex;gap:8px;justify-content:center;margin:0 0 6px}
+.cd div{background:#000;border:1px solid var(--neon-d);border-radius:10px;min-width:64px;padding:8px 6px;text-align:center}
+.cd b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:38px;line-height:1;color:var(--neon)}
+.cd span{font-size:12px;color:var(--mut)}
+.tbox{display:none;text-align:center;margin:0 0 18px}
+.tbox.on{display:block}
+.tbox p{margin:0 0 8px;color:var(--amber);font-weight:600;font-size:15px}
+.old{color:var(--mut);text-decoration:line-through;font-size:22px;margin-bottom:2px}
+.save{display:inline-block;background:var(--neon);color:#031003;font-weight:700;border-radius:8px;padding:3px 12px;font-size:15px;margin:8px 0}
+.ended{display:none;color:var(--amber);font-weight:600;margin-bottom:10px}
+.ended.on{display:block}
+table{width:100%;border-collapse:collapse;margin-top:16px;font-size:16px}
+th,td{padding:12px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:"Barlow Condensed",sans-serif;font-size:22px;font-weight:800}
+th.g{color:var(--neon)} td:first-child{color:var(--mut);width:30%}
+td.g{color:var(--txt);background:rgba(57,255,20,.05)}
+.quote{border-left:4px solid var(--neon);padding:6px 0 6px 16px;margin:18px 0;font-size:20px;color:var(--txt)}
+.ps{background:var(--card);border:1px dashed var(--neon-d);border-radius:14px;padding:18px;margin-top:26px}
+.ps p{margin-bottom:8px}
+.bar .tm{font-family:"Barlow Condensed",sans-serif;font-size:22px;color:var(--amber)}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap"><b>Clipes <span class="n">que Vendem</span></b><a class="btn s cta" href="#oferta">Quero entrar</a></div></div>
+
+<header class="hero"><div class="wrap">
+<span class="tag">Feito para motoboys e entregadores</span>
+<h1>Faça o celular trabalhar por você, <span class="n">mesmo com a moto parada.</span></h1>
+<p class="lead">O passo a passo para montar uma renda extra online com vídeos curtos no TikTok, uma página simples e a Kiwify. Sem aparecer, sem pagar anúncio e sem largar a sua rotina de entregas.</p>
+<ul class="ticks">
+<li>Método completo, do zero ao primeiro vídeo no ar</li>
+<li>Plano de 30 dias com a tarefa de cada dia</li>
+<li>Prompts prontos para IA criar roteiro, legenda e página</li>
+<li>Grupo de suporte para tirar suas dúvidas</li>
+<li>Garantia de 7 dias: se não servir, devolvo seu dinheiro</li>
+</ul>
+<a class="btn big cta" href="#oferta">Quero começar agora</a>
+<p class="fine">Pagamento seguro pela Kiwify. Acesso imediato após a confirmação.</p>
+</div></header>
+
+<section><div class="wrap">
+<h2>A moto trabalha. <span class="n">E quando ela para?</span></h2>
+<p class="lead">Quem vive de entrega conhece a conta de cor: a renda do dia depende da moto, do tempo e da demanda.</p>
+<ul class="pain">
+<li>Chuva forte e o app para de chamar.</li>
+<li>Gasolina, óleo, pneu e parcela comem boa parte do que entra.</li>
+<li>Moto na oficina é dia sem ganhar nada.</li>
+<li>Cansaço, queda ou doença deixam a renda no zero.</li>
+<li>Você passa o dia com o celular na mão, mas ele só serve para receber corrida.</li>
+</ul>
+<div class="quote">O problema não é falta de esforço. É depender de uma única fonte de renda.</div>
+<p>Enquanto você roda, milhares de pessoas estão assistindo vídeos curtos e comprando cursos, planilhas e guias online. Quem aprende a ficar no meio desse caminho cria uma segunda porta de entrada de dinheiro, que não depende de gasolina nem de pneu.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>E se o seu celular <span class="n">também trabalhasse por você?</span></h2>
+<p class="lead">É isso que o Clipes que Vendem ensina: um funil simples que transforma vídeos curtos em vendas de produtos digitais.</p>
+<p>Você não precisa aparecer, ter seguidores nem entender de tecnologia. O TikTok mostra seus vídeos para desconhecidos, o link da bio leva até a oferta e a Kiwify cuida do pagamento e da sua comissão. A inteligência artificial faz o trabalho pesado de roteiro, texto e página.</p>
+<ol class="days" style="counter-reset:d">
+<li><b>Escolha um assunto e um produto</b><span>Afiliado na Kiwify ou produto próprio criado com IA.</span></li>
+<li><b>Poste vídeos curtos no TikTok</b><span>Com clipes de fontes autorizadas, legenda e um gancho forte.</span></li>
+<li><b>Feche cada vídeo com uma chamada</b><span>Uma CTA padrão leva a pessoa ao link da bio.</span></li>
+<li><b>Deixe a página apresentar a oferta</b><span>O checkout da Kiwify processa a compra e paga você.</span></li>
+<li><b>Meça e ajuste toda semana</b><span>Corte o que não funciona e repita o que funciona.</span></li>
+</ol>
+</div></section>
+
+<section><div class="wrap">
+<h2>Só moto <span class="n">ou moto + renda online?</span></h2>
+<table><tr><th></th><th>Só a moto</th><th class="g">Com o método</th></tr>
+<tr><td>Fonte de renda</td><td>Uma só</td><td class="g">Duas</td></tr>
+<tr><td>Dia de chuva</td><td>Renda cai</td><td class="g">Você produz do celular</td></tr>
+<tr><td>Custo para operar</td><td>Combustível e manutenção</td><td class="g">Celular e internet</td></tr>
+<tr><td>Moto na oficina</td><td>Dia parado</td><td class="g">O trabalho online segue</td></tr>
+<tr><td>Escala</td><td>Limitada às suas horas</td><td class="g">Um vídeo pode ser visto muitas vezes</td></tr></table>
+<p class="fine" style="text-align:left">Comparação de modelo de trabalho. Não é promessa de valor: o resultado depende da sua execução.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Tudo que você <span class="n">recebe</span></h2>
+<div class="cards c2">
+<div class="card"><h3>Guia completo de 43 páginas</h3><p>12 módulos cobrindo todo o caminho, do nicho às métricas.</p></div>
+<div class="card"><h3>Plano de 30 dias</h3><p>Uma tarefa por dia. Você nunca fica sem saber o que fazer.</p></div>
+<div class="card"><h3>Banco de prompts</h3><p>Prompts prontos para ganchos, descrições, bio, FAQ e análise de números.</p></div>
+<div class="card"><h3>20 ganchos e 12 CTAs</h3><p>Modelos para copiar, adaptar e testar nos seus vídeos.</p></div>
+<div class="card"><h3>Modelos de mensagem</h3><p>Textos prontos para pedir autorização a criadores e fechar parcerias.</p></div>
+<div class="card hl"><h3>Grupo de suporte</h3><p>Tire dúvidas e acompanhe quem está aplicando o método ao mesmo tempo que você.</p></div>
+</div>
+<h3 style="margin-top:34px">O que tem dentro, módulo a módulo</h3>
+<details><summary>Módulo 1: O modelo</summary><p>Como as cinco peças do funil se conectam: clipes, CTA, link na bio, página e checkout.</p></details><details><summary>Módulo 2: Nicho</summary><p>Matriz de pontuação, subnichos e como escolher um público que já compra online.</p></details><details><summary>Módulo 3: Kiwify</summary><p>Conta, recebimento, afiliação e a tabela para avaliar produtos antes de indicar.</p></details><details><summary>Módulo 4: Produto com IA</summary><p>Como criar seu próprio e-book, com prompts de sumário, capítulo e revisão.</p></details><details><summary>Módulo 5: Página de vendas</summary><p>Os 10 blocos, exemplo de copy e checklist de desempenho no celular.</p></details><details><summary>Módulo 6: Clipes</summary><p>Fontes autorizadas, como organizar o banco e mensagens para fechar parcerias.</p></details><details><summary>Módulo 7: Edição rápida</summary><p>20 fórmulas de gancho, anatomia do vídeo e produção em lote.</p></details><details><summary>Módulo 8: CTA com IA</summary><p>Fórmula da chamada, 12 exemplos e como testar versões.</p></details><details><summary>Módulo 9: TikTok</summary><p>Perfil, bio, descrição, comentário fixado e rotina de 10 vídeos.</p></details><details><summary>Módulo 10: Métricas</summary><p>A conta do funil, diagnóstico de problemas e planilha semanal.</p></details><details><summary>Módulo 11: Plano de 30 dias</summary><p>Uma tarefa por dia, da conta criada à primeira revisão.</p></details><details><summary>Módulo 12: Erros e regras</summary><p>O que derruba contas, regras de conformidade e FAQ do método.</p></details>
+</div></section>
+
+<section><div class="wrap">
+<h2>“Mas eu <span class="n">não consigo...”</span></h2>
+<div class="cards">
+<div class="card"><h3>“Não tenho tempo.”</h3><p>O método foi pensado para blocos curtos no celular, nas pausas entre entregas e à noite. O guia mostra uma rotina em lote para produzir vários vídeos de uma vez.</p></div>
+<div class="card"><h3>“Nunca mexi com isso.”</h3><p>Tudo é explicado do zero, com passos numerados, modelos prontos e prompts para copiar e colar. Você não precisa entender de marketing.</p></div>
+<div class="card"><h3>“Não quero aparecer.”</h3><p>Não precisa. Os vídeos usam clipes autorizados, legenda e voz de IA.</p></div>
+<div class="card"><h3>“E se não der certo para mim?”</h3><p>Você tem 7 dias de garantia. Se achar que não valeu, devolvo todo o valor.</p></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Sua primeira semana, <span class="n">dia a dia</span></h2>
+<p>Resultado não tem prazo garantido. O que você controla é a execução. Esta é a rota inicial:</p>
+<ol class="days">
+<li><b>Dia 1</b><span>Escolhe o nicho e cria a conta na Kiwify.</span></li>
+<li><b>Dia 2</b><span>Avalia 3 produtos e pede afiliação.</span></li>
+<li><b>Dia 3</b><span>Monta a página e testa o link no celular.</span></li>
+<li><b>Dia 4</b><span>Cria o perfil e a bio no TikTok.</span></li>
+<li><b>Dia 5</b><span>Gera a CTA e monta o modelo de edição.</span></li>
+<li><b>Dia 6</b><span>Posta os primeiros vídeos.</span></li>
+<li><b>Dia 7</b><span>Olha os números e ajusta.</span></li>
+</ol>
+</div></section>
+
+<section><div class="wrap">
+<h2>É para você? <span class="n">Seja sincero.</span></h2>
+<div class="two">
+<div class="card"><h3>É para você se</h3><ul class="yes"><li>Tem celular e internet</li><li>Topa dedicar algumas horas por dia</li><li>Aceita testar e ajustar, mesmo sem resultado imediato</li><li>Quer uma segunda fonte de renda, não um milagre</li></ul></div>
+<div class="card"><h3>Não é para você se</h3><ul class="no"><li>Quer dinheiro garantido sem esforço</li><li>Desiste em poucos dias</li><li>Procura promessa de enriquecimento rápido</li></ul></div>
+</div>
+<p style="margin-top:18px">Aqui a conversa é direta: o método mostra o caminho, mas o resultado depende do seu nicho, dos seus vídeos, da oferta e da sua constância. Quem promete ganho certo está vendendo ilusão.</p>
+</div></section>
+
+<section id="oferta"><div class="wrap">
+<div class="offer">
+<h2 style="margin-bottom:6px">Clipes que Vendem</h2>
+<p>Guia completo + plano de 30 dias + prompts + grupo de suporte</p>
+<div class="old p-old">de R$ <s>499,00</s></div>
+<div class="price"><small>R$</small> <span class="p-now">49,90</span></div>
+<span class="save p-save">90% de desconto</span>
+<p style="margin-top:6px">pagamento único, acesso imediato</p>
+<ul>
+<li>Guia completo em PDF (43 páginas)</li>
+<li>Plano de 30 dias, dia a dia</li>
+<li>Banco de prompts, ganchos e CTAs</li>
+<li>Modelos de mensagem para parcerias</li>
+<li>Grupo de suporte</li>
+<li>Garantia de 7 dias com devolução do valor</li>
+</ul>
+<a class="btn big cta" href="#">Quero meu acesso agora</a>
+<p class="fine">Compra 100% segura. Você recebe o acesso por e-mail.</p>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="seal">
+<div class="d"><span>7<small>dias</small></span></div>
+<div><h3>Risco zero para você</h3><p style="margin:0">Aplique o método. Se achar que não vale o que pagou, peça o reembolso em até 7 dias e devolvo 100% do valor, sem burocracia.</p></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Perguntas <span class="n">frequentes</span></h2>
+<details><summary>Preciso aparecer nos vídeos?</summary><p>Não. Você pode usar legendas, voz de IA e clipes de fontes autorizadas.</p></details>
+<details><summary>Preciso investir em anúncio?</summary><p>O método é de tráfego orgânico. Você pode começar com o celular e ferramentas gratuitas.</p></details>
+<details><summary>Vou ganhar quanto e em quanto tempo?</summary><p>Não há valor nem prazo garantido. Depende de nicho, oferta, qualidade dos vídeos e constância. O guia mostra como medir seus números para ajustar a rota.</p></details>
+<details><summary>Dá para fazer com a rotina de entregas?</summary><p>Sim. O processo foi pensado para blocos curtos de trabalho, feitos no celular, nas pausas ou à noite.</p></details>
+<details><summary>Como funciona o suporte?</summary><p>Depois da compra você entra no grupo de suporte para tirar dúvidas sobre a aplicação do método.</p></details>
+<details><summary>Como peço o reembolso?</summary><p>É só solicitar em até 7 dias após a compra pelo canal da Kiwify ou pelo suporte. O valor é devolvido integralmente.</p></details>
+<details><summary>Em quanto tempo recebo o acesso?</summary><p>Logo após a confirmação do pagamento, por e-mail.</p></details>
+<div class="ps">
+<p><b>P.S.</b> Você pode continuar com uma única fonte de renda e torcer para a moto não parar. Ou pode dedicar algumas horas por dia, por 30 dias, para construir uma segunda. Com garantia de 7 dias, o risco de testar é todo meu.</p>
+<a class="btn big cta" href="#oferta">Quero testar o método</a>
+</div>
+</div></section>
+
+<footer><div class="wrap">
+<p>Este material tem fins educacionais. Resultados variam conforme a execução de cada pessoa e não há garantia de ganhos. As ferramentas citadas pertencem aos seus respectivos donos e podem mudar de interface. Siga sempre os Termos de Uso de cada plataforma.</p>
+<p>© 2026 Clipes que Vendem. Todos os direitos reservados.</p>
+</div></footer>
+
+<div class="mob"><a class="btn big cta" style="animation:none;padding:14px" href="#oferta">Quero entrar agora</a></div>
+
+<script>
+// 1) Cole aqui seu link de checkout da Kiwify
+var CHECKOUT="";
+// Contador desativado.
+var PROMO_END="";
+var PRICE_NOW="49,90", PRICE_FULL="499,00";
+document.querySelectorAll("#oferta a.cta").forEach(function(a){ if(CHECKOUT){a.href=CHECKOUT} });
+function all(s){return Array.prototype.slice.call(document.querySelectorAll(s))}
+function p(n){return String(n).padStart(2,"0")}
+(function(){
+  var end=new Date(PROMO_END).getTime();
+  if(!PROMO_END||isNaN(end)) return;
+  function tick(){
+    var d=end-Date.now();
+    if(d<=0){
+      all(".tbox").forEach(function(e){e.classList.remove("on")});
+      all(".p-old,.p-save").forEach(function(e){e.style.display="none"});
+      all(".p-now").forEach(function(e){e.textContent=PRICE_FULL});
+      all(".ended").forEach(function(e){e.classList.add("on")});
+      all(".tmtxt").forEach(function(e){e.textContent=""});
+      return;
+    }
+    var h=Math.floor(d/3600000),m=Math.floor(d%3600000/60000),s=Math.floor(d%60000/1000);
+    all(".tbox").forEach(function(b){b.classList.add("on");b.querySelector(".h").textContent=p(h);b.querySelector(".m").textContent=p(m);b.querySelector(".s").textContent=p(s)});
+    all(".tmtxt").forEach(function(e){e.textContent=p(h)+":"+p(m)+":"+p(s)});
+    setTimeout(tick,1000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>
